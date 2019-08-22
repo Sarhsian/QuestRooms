@@ -48,8 +48,16 @@
     <Compile Include="Mapping\MapperProFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Abstraction\ICityService.cs" />
+    <Compile Include="Services\Abstraction\IRoomService.cs" />
+    <Compile Include="Services\DtoModels\AdressDto.cs" />
     <Compile Include="Services\DtoModels\CityDto.cs" />
+    <Compile Include="Services\DtoModels\CompanyDto.cs" />
+    <Compile Include="Services\DtoModels\CountryDto.cs" />
+    <Compile Include="Services\DtoModels\ImageDto.cs" />
+    <Compile Include="Services\DtoModels\RoomDto.cs" />
+    <Compile Include="Services\DtoModels\StreetDto.cs" />
     <Compile Include="Services\Implementation\CityService.cs" />
+    <Compile Include="Services\Implementation\RoomService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuestRooms.DAL\QuestRooms.DAL.csproj">

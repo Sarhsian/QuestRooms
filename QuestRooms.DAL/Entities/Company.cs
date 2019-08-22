@@ -14,6 +14,6 @@ namespace QuestRooms.DAL.Entities
         public int ID { get; set; }
         [Required]
         public string CompanyName { get; set; }
-        public ICollection<Room> Rooms { get; set; }
+        public virtual ICollection<Room> Rooms { get; set; }
     }
 }

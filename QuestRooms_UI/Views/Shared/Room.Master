@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Room.master.cs" Inherits="QuestRooms_UI.Views.Shared.Room" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>    
+</head>
+<body>
+    <header style="background-color: aqua; height: 100px;">
+        <div>
+            <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </header>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer style="background-color: aqua; height: 50px;">
+        <div>
+            <asp:ContentPlaceHolder ID="FooterContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </footer>
+</body>
+</html>
