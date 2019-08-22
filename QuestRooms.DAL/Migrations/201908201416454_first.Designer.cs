@@ -6,14 +6,14 @@ namespace QuestRooms.DAL.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
+    [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
     public sealed partial class first : IMigrationMetadata
     {
         private readonly ResourceManager Resources = new ResourceManager(typeof(first));
         
         string IMigrationMetadata.Id
         {
-            get { return "201908191433493_first"; }
+            get { return "201908201416454_first"; }
         }
         
         string IMigrationMetadata.Source
