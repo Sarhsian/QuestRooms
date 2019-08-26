@@ -10,7 +10,7 @@ namespace QuestRooms_UI.Controllers
     public class CityController : Controller
     {
         private readonly ICityService cityService;
-        // GET: City
+        
         public CityController(ICityService _cityService)
         {
             cityService = _cityService;

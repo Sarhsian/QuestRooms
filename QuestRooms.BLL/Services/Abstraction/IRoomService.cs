@@ -9,6 +9,6 @@ namespace QuestRooms.BLL.Services.Abstraction
 {
     public interface IRoomService
     {
-        ICollection<RoomDto> GetAllCities();
+        ICollection<RoomDto> GetAllRooms();
     }
 }

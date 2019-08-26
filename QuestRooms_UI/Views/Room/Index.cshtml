@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @{ 
+            foreach (QuestRooms.BLL.Services.DtoModels.RoomDto room in @ViewBag.AllRooms)
+            {
+                <a style="color:royalblue">@room.Name</a>
+                <br />
+            }
+        }
+        @*@RenderBody()*@
+    </div>
+</body>
+</html>

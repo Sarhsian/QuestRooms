@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuestRooms.BLL.Services.Abstraction;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,17 @@ namespace QuestRooms_UI.Controllers
 {
     public class RoomController : Controller
     {
-        // GET: Room
+        private readonly IRoomService roomService;
+
+        public RoomController(IRoomService _roomService)
+        {
+            roomService = _roomService;
+        }
+
         public ActionResult Index()
         {
-            return View();
+            ViewBag.AllRooms = roomService.GetAllRooms();
+            return View();            
         }
     }
 }

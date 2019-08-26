@@ -22,7 +22,7 @@ namespace QuestRooms.BLL.Services.Implementation
             mapper = _mapper;
         }
 
-        public ICollection<RoomDto> GetAllCities()
+        public ICollection<RoomDto> GetAllRooms()
         {
             var rooms = roomRepos.GetAll();
             return mapper.Map<IEnumerable<Room>, ICollection<RoomDto>>(rooms);
