@@ -18,8 +18,8 @@ namespace QuestRooms_UI.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.AllRooms = roomService.GetAllRooms();
-            return View();            
+            var rooms = roomService.GetAllRooms().ToList();
+            return View(rooms);            
         }
     }
 }

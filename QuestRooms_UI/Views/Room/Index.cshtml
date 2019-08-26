@@ -1,20 +1,36 @@
-﻿<!DOCTYPE html>
+﻿@model List<QuestRooms.BLL.Services.DtoModels.RoomDto>
+<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
-        @{ 
-            foreach (QuestRooms.BLL.Services.DtoModels.RoomDto room in @ViewBag.AllRooms)
-            {
-                <a style="color:royalblue">@room.Name</a>
-                <br />
-            }
+
+<div class="row">
+        @foreach (var room in Model)
+        {
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+            <div class="card">
+                <div class="card-img-top">
+                    <img class="img-fluid" src="https://www.meme-arsenal.com/memes/68d1ed4e5a3230367a738a61c0c66de3.jpg" />
+                </div>
+                <div class="card-header">
+                        @room.Name
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        @room.Description
+                    </div>
+                    <div class="card-text">
+                        @room.Rating
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button>
+                        Buy
+                    </button>                
+                        
+                </div>
+            </div>
+        </div>
         }
-        @*@RenderBody()*@
-    </div>
-</body>
-</html>
+
+
+</div>
+
